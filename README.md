@@ -54,3 +54,7 @@ mongoose
 8. Create Topic view
 9. Create Comment View
 10. Vote button ( ? hidden form )
+
+
+#WireFrame 
+![alt text] https://github.com/JosephinaTavera/Project2_Lets_Talk/blob/master/wireframe/index.JPG
