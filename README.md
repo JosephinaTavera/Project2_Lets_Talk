@@ -1,9 +1,9 @@
 # Project2_Lets_Talk
 
-# Jake's Forum 
+## Jake's Forum 
 Jake loves discussion amongst his friends, but he wants a way to keep it organized. He wants his own forum.
 
-# Jake's Requirements
+## Jake's Requirements
 
 - Jake wants his friends to be able to discuss things by topics. Users should be able to create topics, and other users should be able to comment on those topics.
 
@@ -18,7 +18,7 @@ Jake loves discussion amongst his friends, but he wants a way to keep it organiz
 - Jake really wants the application to look good.
 
 
-#Jake's Bonus options
+##Jake's Bonus options
 
 - Jake wants users to sign up with a username and password, and to login to the application before being able to use it. (session controllers + user models)
 
@@ -33,7 +33,7 @@ Jake loves discussion amongst his friends, but he wants a way to keep it organiz
 - Jake is a nerd, and is a fan of proper formatting. He wants everyone to write their discussion posts in markdown format. (node package: marked)
 
 
-#MVP 
+##MVP 
 
 Technologies :
 
@@ -57,6 +57,6 @@ mongoose
   10. Vote button ( ? hidden form )
 
 
-#WireFrame 
+##WireFrame 
 ![index] (https://github.com/JosephinaTavera/Project2_Lets_Talk/blob/master/wireframe/index.JPG)
 ![show] (https://github.com/JosephinaTavera/Project2_Lets_Talk/blob/master/wireframe/show.JPG)
