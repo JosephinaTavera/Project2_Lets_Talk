@@ -37,24 +37,20 @@ Jake loves discussion amongst his friends, but he wants a way to keep it organiz
 
 Technologies :
 
-HTML
-CSS
-JavaScript & jQuery
-node.js & express
-mongoose
+HTML, CSS, JavaScript & jQuery, node.js & express, mongoose
 
 
-  1. Schema for user - name, password
+  1.Schema for user - name, password
   2 Schema for topic - title/subject, upvote, author
-  3. Schema for comment - comment, author
+  3.Schema for comment - comment, author
   4. New topic button
   5. new comment button
-  5. search bar
-  6. Topic view (show)
-  7. Home view (index)
-  8. Create Topic view
-  9. Create Comment View
-  10. Vote button ( ? hidden form )
+  6. search bar
+  7. Topic view (show)
+  8. Home view (index)
+  9. Create Topic view
+  10. Create Comment View
+  11. Vote button ( ? hidden form )
 
 
 ##WireFrame 
