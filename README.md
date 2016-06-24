@@ -39,10 +39,9 @@ Technologies :
 
 HTML, CSS, JavaScript & jQuery, node.js & express, mongoose
 
-
-  1.Schema for user - name, password
-  2 Schema for topic - title/subject, upvote, author
-  3.Schema for comment - comment, author
+  1. Schema for user - name, password
+  2. Schema for topic - title/subject, upvote, author
+  3. Schema for comment - comment, author
   4. New topic button
   5. new comment button
   6. search bar
