@@ -57,4 +57,5 @@ mongoose
 
 
 #WireFrame 
-![alt text] https://github.com/JosephinaTavera/Project2_Lets_Talk/blob/master/wireframe/index.JPG
+![index] (https://github.com/JosephinaTavera/Project2_Lets_Talk/blob/master/wireframe/index.JPG)
+![show] (https://github.com/JosephinaTavera/Project2_Lets_Talk/blob/master/wireframe/show.JPG)
