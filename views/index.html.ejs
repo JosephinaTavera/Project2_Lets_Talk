@@ -3,6 +3,21 @@
 	<title></title>
 </head>
 <body>
+
 	<h1>Welcome</h1>
+
+
+	<form action='topic' method=POST>
+		<input type='submit' value='New Topic' />
+	</form>
+
+	<form action='topic' method=POST>
+		<input type = 'text' name='title' placeholder='search'>
+	</form>
+
+	<% for (var i=0; i < list.length; i++ ){ %>
+		<li> <%= list[i].username %> </li>
+	<%} %>
+
 </body>
 </html>
