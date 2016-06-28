@@ -11,12 +11,14 @@
 		<input type='submit' value='New Topic' />
 	</form>
 
-	<form action='topic' method=POST>
+	<form action='topic/search' method=POST>
 		<input type = 'text' name='title' placeholder='search'>
 	</form>
 
 	<% for (var i=0; i < list.length; i++ ){ %>
-		<li> <%= list[i].username %> </li>
+		<a href="topic/<%=list[i]._id%>/comment">
+		<li> <%= list[i].title %> </li>
+		</a>
 	<%} %>
 
 </body>
