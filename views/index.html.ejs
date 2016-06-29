@@ -1,6 +1,9 @@
 <html>
 <head>
 	<title></title>
+<!-- 	<link rel="stylesheet" src="/bower_components/carousel-3d/dist/styles/jquery.carousel-3d.default.css" /> -->
+
+
 </head>
 <body>
 
@@ -15,11 +18,33 @@
 		<input type = 'text' name='title' placeholder='search'>
 	</form>
 
-	<% for (var i=0; i < list.length; i++ ){ %>
-		<a href="topic/<%=list[i]._id%>/comment">
-		<li> <%= list[i].title %> </li>
-		</a>
-	<%} %>
+	
+
+		<% for (var i=0; i < list.length; i++ ){ %>
+			<a href="topic/<%=list[i]._id%>/comment">
+			<li> <%= list[i].title %> </li>
+			</a>
+		<%} %>
+
+
+
+
+<!-- <script data-main = 'config' src="../require.js"></script> -->
+// <script> require([config],function(){
+// 	alert('after require keyword');});</script>
+<!-- <script type="text/javascript" src='./public/js/carousel.js'></script> -->
+<!-- <div id="wrapper">
+    	<div id="myCarousel" data-carousel-3d > -->
+
+	<!-- 	</div>
+	</div> -->
+
+<!-- <script src="https://code.jquery.com/jquery-3.0.0.min.js" integrity="sha256-JmvOoLtYsmqlsWxa7mDSLMwa6dZ9rrIdtrrVYRnDRH0=" crossorigin="anonymous"></script>
+<script type="text/javascript" src='http://requirejs.org/docs/release/2.2.0/minified/require.js'></script>
+<script src="/bower_components/javascript-detect-element-resize/jquery.resize.js"></script>
+<script src="/bower_components/waitForImages/dist/jquery.waitforimages.js"></script>
+<script src="/bower_components/modernizr/modernizr.js"></script>
+<script src="/bower_compenents/carousel-3d/dist/jquery.carousel-3d.js" ></script> -->
 
 </body>
 </html>
