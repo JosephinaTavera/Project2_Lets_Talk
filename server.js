@@ -9,8 +9,9 @@ app.use(bodyParser.urlencoded({extended: false}));
 
 // Mongoose
 var mongoose = require('mongoose');
+mongoUri = process.env.MONGODB_URI || 'mongodb://localhost:27017/jakesdb'
 var db = mongoose.connection;
-mongoose.connect('mongodb://localhost:27017/jakesdb');
+mongoose.connect(mongoUri);
 db.once('open', function(){
 	console.log('Connected to mongodb');
 });
@@ -30,15 +31,3 @@ var topicController = require('./controllers/topicController.js');
 app.use('/topic', topicController);
 
 
-// var requirejs = require('require.js');
-
-// requirejs.config({
-// 	baseUrl: 'bower_components',
-// 	paths: {
-// 		carousel: 'carousel-3d/dist/styles/jquery.carousel-3d',
-// 		carouselResize: 'javascript-detect-element-resize/jquery.resize',
-// 		carouselWait: 'waitForImages/dist/jquery.waitforimages',
-// 		carouselModern: 'modernizer/src/Modernizr',
-// 		nodeRequire: require
-// 	}
-// })

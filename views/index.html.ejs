@@ -7,21 +7,21 @@
 </head>
 <body>
 
-	<h1>Welcome</h1>
+	<h1>Welcome  <%= user %> </h1>
 
 
-	<form action='topic' method=POST>
+	<form action='topic' method=GET>
 		<input type='submit' value='New Topic' />
 	</form>
 
-	<form action='topic/search' method=POST>
+	<form action='/topic/search' method=POST>
 		<input type = 'text' name='title' placeholder='search'>
 	</form>
 
 	
 
-		<% for (var i=0; i < list.length; i++ ){ %>
-			<a href="topic/<%=list[i]._id%>/comment">
+		<% for (var i=0; i < list.length; i++ ){ %>q
+			<a href="/topic/<%=list[i]._id%>/comment">
 			<li> <%= list[i].title %> </li>
 			</a>
 		<%} %>
@@ -30,8 +30,6 @@
 
 
 <!-- <script data-main = 'config' src="../require.js"></script> -->
-// <script> require([config],function(){
-// 	alert('after require keyword');});</script>
 <!-- <script type="text/javascript" src='./public/js/carousel.js'></script> -->
 <!-- <div id="wrapper">
     	<div id="myCarousel" data-carousel-3d > -->
