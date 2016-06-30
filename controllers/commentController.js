@@ -5,13 +5,15 @@ var Topic = require('../models/topic.js');
 var Comment = require('../models/comment.js')
 
 
-Comment
-router.post('/comment', function(req,res)
-{
-		res.redirect('/topic/:topicid/comment');
-});
+//Comment
+// router.post('/comment', function(req,res)
+// {
+// 		res.redirect('/topic/:topicid/comment');
+// });
 
-router.get('topic/:id/comment', function(req,res){
+
+router.get('/:topicid', function(req,res){
+	console.log(req.params);
 	Topic.find({},function(err,topic){
 		res.render('comment.html.ejs', {
 			list: topic

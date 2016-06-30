@@ -30,4 +30,5 @@ app.use('/index', indexController);
 var topicController = require('./controllers/topicController.js');
 app.use('/topic', topicController);
 
-
+var commentController = require('./controllers/commentController.js');
+app.use('/comment', commentController);

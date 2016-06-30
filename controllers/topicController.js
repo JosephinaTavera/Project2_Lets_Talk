@@ -6,40 +6,41 @@ var Comment = require('../models/comment.js')
 
 
 
+router.post('/',function(req,res){
+	Topic.find({}, function(err,topic){
+	res.render('topic.html.ejs', {
+		list: topic 
+	})
+})
+	})
+
+
 
 // Topic
-router.post('/topic/new', function(req,res)
-{
-	res.render('topic.html.ejs');
-
-});
-
-router.get('/topic', function(req,res)
-{
-	res.render('index.html.ejs');
-
-});
 
 
-router.post('/topic/new/add', function(req,res){
+
+
+router.post('/new', function(req,res){
 		Topic.create(req.body,function(err, data){
 
-		res.redirect('/index/username')
+		res.redirect('/index/topic/username')
 	})
 })
 
 // Topic Search
-router.post('/topic/search', function(req,res){
+router.post('/search/:username', function(req,res){
 		// attempting search
 		//     phrase = '/' + req.body.title + '/i' ;
 		//     searchPhrase = {title: phrase};
 		//      console.log(searchPhrase);
 		// The following format does work
 		// Topic.find({title: /Raffle/i}, function(err, data){
-
 		Topic.find(req.body,function(err, data){
-			console.log(data);
-		res.redirect('/topic/username')
+		res.render('index.html.ejs',{
+			list: data,
+			user: req.params.username
+		})
 	})
 })
 
