@@ -55,3 +55,41 @@ HTML, CSS, JavaScript & jQuery, node.js & express, mongoose
 ##WireFrame 
 ![index] (https://github.com/JosephinaTavera/Project2_Lets_Talk/blob/master/wireframe/index.JPG)
 ![show] (https://github.com/JosephinaTavera/Project2_Lets_Talk/blob/master/wireframe/show.JPG)
+
+
+## Sources
+
+Used for search item
+http://mongoosejs.com/docs/api.html#query_Query-find
+
+something to review
+https://docs.mongodb.com/manual/reference/operator/query/text/#op._S_text
+
+https://www.npmjs.com/package/mongoose-text-search
+
+Carousel
+
+http://desandro.github.io/3dtransforms/docs/carousel.html
+http://www.owlgraphic.com/owlcarousel/demos/transitions.html
+http://www.w3schools.com/bootstrap/bootstrap_carousel.asp
+
+http://www.jqueryscript.net/demo/Simple-jQuery-Carousel-Plugin-With-3D-Rotating-Effects-Carousel3d/
+
+bouncing ball
+https://24ways.org/examples/2010/real-animation/demo5/
+
+http://www.htmldrive.net/items/show/1083/jQuery-images-opening-and-closing-door-effect
+
+http://www.creativebloq.com/css3/animation-with-css3-712437
+
+curtain effect
+
+http://cssdeck.com/labs/css3-theater-curtains
+
+https://css-tricks.com/creating-css-sliding-door-effect/
+
+http://buildinternet.com/2009/07/animate-curtains-opening-with-jquery/
+
+
+
+https://docs.mongodb.com/manual/reference/database-references/

@@ -9,7 +9,7 @@ app.use(bodyParser.urlencoded({extended: false}));
 
 // Mongoose
 var mongoose = require('mongoose');
-var mongoUri = process.env.MONGODB_URI || 'mongodb://localhost:27017/jakesdb'
+var mongoUri = process.env.MONGODB_URI || 'mongodb://localhost:27017/jakesdb';
 var db = mongoose.connection;
 mongoose.connect(mongoUri);
 db.once('open', function(){
