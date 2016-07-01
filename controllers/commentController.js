@@ -12,9 +12,9 @@ var Comment = require('../models/comment.js')
 // });
 
 
-router.get('/:topicid', function(req,res){
-	console.log(req.params);
-	Topic.find({},function(err,topic){
+router.get('/:_id', function(req,res){
+	Topic.findOne(req.params,function(err,topic){
+		// console.log('First Hello' + topic)
 		res.render('comment.html.ejs', {
 			list: topic
 		})
@@ -22,18 +22,31 @@ router.get('/:topicid', function(req,res){
 });
 
 
-router.post('comment/new', function(req,res){
-	res.redirect('comment/new');
+// router.post('/new', function(req,res){
+// 	res.redirect('comment/new');
+// })
+
+router.get('/:_id/new', function(req,res){
+		// console.log(req.params);
+	res.render('newcomment.html.ejs',{
+		list: req.params
+	});
 })
 
-router.get('comment/new', function(req,res){
-		console.log('Hello' + req.params);
-	res.render('newcomment.html.ejs');
-})
-
-router.post('comment/new', function(req,res){
-		Comment.create(req.body,function(err, data){
-		res.redirect('/comment')
+router.post('/:_id/new', function(req,res){
+	 console.log('req.params')
+	Topic.findOne(req.params,function(err,topic){
+		console.log(topic)
+		console.log(req.body)
+		console.log(topic.comments)
+		topic.comments.push(req.body);
+		topic.save(function(err) {
+			if (err){
+				console.error('ERROR');
+			}
+		});
+		console.log(topic.comments)
+		res.redirect('/comment/' + topic._id)
 	})
 })
 
