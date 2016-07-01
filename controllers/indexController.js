@@ -1,3 +1,7 @@
+// revampled code from original since original code was not mangeable
+// when debugging.    
+// Focued too much on trying to get carousel to run and not the tail end of project
+
 var express = require('express');
 var router = express.Router();
 var User = require('../models/user.js');
