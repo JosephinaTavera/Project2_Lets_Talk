@@ -6,10 +6,12 @@ var Comment = require('../models/comment.js')
 
 
 
-router.post('/',function(req,res){
+router.post('/:author',function(req,res){
+		console.log(req.params.author);
 	Topic.find({}, function(err,topic){
 	res.render('topic.html.ejs', {
-		list: topic 
+		list: topic,
+		user: req.params.author
 	})
 })
 	})
@@ -21,15 +23,16 @@ router.post('/',function(req,res){
 
 
 
-router.post('/new', function(req,res){
+router.post('/new/:author', function(req,res){
+		console.log('body of text has ' + req.body)
 		Topic.create(req.body,function(err, data){
-
+			console.log(data)
 		res.redirect('/index/topic/username')
 	})
 })
 
 // Topic Search
-router.post('/search/:username', function(req,res){
+router.post('/search', function(req,res){
 		// attempting search
 		//     phrase = '/' + req.body.title + '/i' ;
 		//     searchPhrase = {title: phrase};
