@@ -23,7 +23,7 @@
 		<% for (var i=0; i < list.length; i++ ){ %>
 			<a href='/comment/<%=list[i]._id%>'>
 			<!-- <a href='/comment'> -->
-			<li> <%= list[i].title %> </li>
+			<li> <%= list[i].title %>  <%= list[i].comments.length %> comments</li>
 			</a>
 		<%} %>
 

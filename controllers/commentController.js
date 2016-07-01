@@ -50,19 +50,19 @@ router.post('/:_id/new', function(req,res){
 	})
 })
 
-router.post('comment/search', function(req,res){
-		// attempting search
-		//     phrase = '/' + req.body.title + '/i' ;
-		//     searchPhrase = {title: phrase};
-		//      console.log(searchPhrase);
-		// The following format does work
-		// Topic.find({title: /Raffle/i}, function(err, data){
+// router.post('comment/search', function(req,res){
+// 		// attempting search
+// 		//     phrase = '/' + req.body.title + '/i' ;
+// 		//     searchPhrase = {title: phrase};
+// 		//      console.log(searchPhrase);
+// 		// The following format does work
+// 		// Topic.find({title: /Raffle/i}, function(err, data){
 
-		Comment.find(req.body,function(err, data){
-			console.log(data);
-		res.redirect('/comment')
-	})
-})
+// 		Comment.find(req.body,function(err, data){
+// 			console.log(data);
+// 		res.redirect('/comment')
+// 	})
+// })
 
 
 
