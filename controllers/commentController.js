@@ -13,10 +13,12 @@ var Comment = require('../models/comment.js')
 
 
 router.get('/:_id', function(req,res){
-	Topic.findOne(req.params,function(err,topic){
+	console.log(req.params._id)
+	Topic.findOne(req.params_id,function(err,topic){
 		// console.log('First Hello' + topic)
 		res.render('comment.html.ejs', {
-			list: topic
+			list: topic,
+			user: req.params.author
 		})
 });
 });
